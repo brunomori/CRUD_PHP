@@ -10,9 +10,18 @@ Este é um sistema simples de cadastro de usuários desenvolvido em PHP e MySQL.
 
 3. Crie um banco de dados MySQL chamado "crud" ou altere o valor da variável `$dbname` no arquivo `config.php` para o nome do seu banco de dados.
 
-4. Abra o arquivo `config.php` e configure as informações de conexão do banco de dados (host, usuário, senha).
+4. Importe o arquivo `usuarios.sql` no seu banco de dados para criar a tabela necessária. O arquivo `usuarios.sql` pode ser encontrado no diretório raiz do projeto.
 
-5. Importe o arquivo `usuarios.sql` no seu banco de dados para criar a tabela necessária.
+**Nota:** Certifique-se de que seu servidor MySQL esteja em execução e você tenha as permissões necessárias para importar um arquivo SQL.
+
+5. Abra o arquivo `config.php` e configure as informações de conexão do banco de dados (host, usuário, senha).
+$host = 'seu-host';
+$user = 'root';
+$pass = '';
+$dbname = 'crud';
+
+
+6. Salve as alterações no arquivo `config.php`.
 
 ## Uso
 
@@ -27,5 +36,4 @@ Este é um sistema simples de cadastro de usuários desenvolvido em PHP e MySQL.
 ## Contribuição
 
 Contribuições são bem-vindas! Se você encontrar algum problema, tiver alguma ideia de melhoria ou quiser adicionar novos recursos, sinta-se à vontade para abrir um pull request.
-
 
