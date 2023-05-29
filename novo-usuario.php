@@ -35,3 +35,6 @@ include"index.php"
         </button>
     </div>
 </Form>
+<?php 
+include("footer.php");
+?>
