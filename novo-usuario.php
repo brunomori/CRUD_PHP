@@ -1,7 +1,14 @@
 <?php 
 include"index.php"
 ?>
-<Form action="salvar-usuario.php" method="POST">
+
+<style>
+ .row22{
+    margin: 30px;
+ }
+</style>
+
+<Form action="salvar-usuario.php" method="POST" class="row22">
     <div class="mb-3">
         <label for="">Nome</label>
         <input type="text" name="nome" class="form-control">

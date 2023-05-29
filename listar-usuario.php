@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Listar Usuários</title>
     <style>
@@ -7,32 +8,43 @@
             border-collapse: collapse;
             width: 100%;
         }
-        th, td {
+
+        th,
+        td {
             border: 1px solid black;
             padding: 8px;
             text-align: left;
         }
+
         th {
             background-color: #f2f2f2;
         }
+
         .alert {
             background-color: #f44336;
             color: white;
             padding: 8px;
         }
+
+        .row22 {
+            margin: 22px;
+        }
     </style>
 </head>
+
 <body>
     <?php
     include("index.php");
     include("config.php");
 
-    function listarUsuarios($conn) {
+    function listarUsuarios($conn)
+    {
         $sql = "SELECT * FROM usuarios";
         $res = $conn->query($sql);
         $qtd = $res->num_rows;
 
         if ($qtd > 0) {
+            echo "<div class='row22'>";
             echo "<table>";
             echo "<tr>";
             echo "<th>ID</th>";
@@ -41,6 +53,7 @@
             echo "<th>Data de Nascimento</th>";
             echo "<th>Deletar</th>";
             echo "</tr>";
+            echo"<div>";
 
             while ($row = $res->fetch_object()) {
                 echo "<tr>";
@@ -75,8 +88,9 @@
         }
     }
 
-    echo "<h1>Listar Usuários</h1>";
+   
     listarUsuarios($conn);
     ?>
 </body>
+
 </html>
