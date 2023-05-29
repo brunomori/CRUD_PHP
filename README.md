@@ -35,5 +35,5 @@ $dbname = 'crud';
 
 ## Contribuição
 
-Contribuições são bem-vindas! Se você encontrar algum problema, tiver alguma ideia de melhoria ou quiser adicionar novos recursos, sinta-se à vontade para abrir um pull request.
+Contribuições são bem-vindas! Se você encontrar algum problema, tiver alguma ideia de melhoria ou quiser adicionar novos recursos, sinta-se à vontade.
 
